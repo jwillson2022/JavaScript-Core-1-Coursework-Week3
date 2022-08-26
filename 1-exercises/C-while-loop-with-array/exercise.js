@@ -3,7 +3,7 @@
     In the below example, imagine we've defined an array holding the birthdays of your closest friends.
     Use a while loop to search through the array until you find the first birthday in July, then return that birthday from the function.
 */
-
+let i =0;
 const BIRTHDAYS = [
     "January 7th",
     "February 12th",
@@ -16,8 +16,20 @@ const BIRTHDAYS = [
     "November 15th"
 ];
 
-function findFirstJulyBDay(birthdays) {
+function findFirstJulyBDay(bday) {
     // TODO
+while ( i <= bday.length) {
+ 
+if (bday[i] === "July 11th" ){
+    return bday[i]
+} else {
+console.log( bday[i] +" is not my birthday" );
+ i++; 
+}
+
+}
+
+
 }
 
 console.log(findFirstJulyBDay(BIRTHDAYS)); // should output "July 11th"
