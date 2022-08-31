@@ -6,9 +6,14 @@
 
 
 // Change the below code to use a for loop instead of a while loop.
-let i = 0;
+/*let i = 0;
 while(i < 26) {
-    console.log(String.fromCharCode(97 + i));
+    console.log(String.fromCharCode(97 + i)); // letters a-z 26 letters
     i++;
 }
+*/
+for (let i =0; i < 26 ; i++ ) {
+  console.log(String.fromCharCode(97 + i)); // letters a-z 26 letters  
+}
+
 // The output shouldn't change.
