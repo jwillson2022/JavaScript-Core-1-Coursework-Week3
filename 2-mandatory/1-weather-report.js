@@ -11,17 +11,27 @@
         - Hint: you can call the temperatureService function from your function
 */
 
-function getTemperatureReport(cities) {
+function getTemperatureReport(cities) { // pass argument cities
     // TODO
+    cities = usersCities;
+    array=[];
+    for (let i = 0; i < cities.length; i++) {
+        let currentCity = cities[i];
+         let degrees = test(city);
+  
+         console.log(` The temperature in ${currentCity} is ${degrees} degrees`);
+    }
+    
 }
+
 
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-function temperatureService(city) {
-    let temparatureMap  = new Map();
+function temperatureService(city) {  // pass argument city
+    let temparatureMap  = new Map(); // loop 
 
-    temparatureMap.set('London', 10);
+    temparatureMap.set('London', 10); // add
     temparatureMap.set('Paris', 12);
     temparatureMap.set('Barcelona', 17);
     temparatureMap.set('Dubai', 27);
@@ -29,7 +39,7 @@ function temperatureService(city) {
     temparatureMap.set('São Paulo', 23);
     temparatureMap.set('Lagos', 33);
     
-    return temparatureMap.get(city);
+    return temparatureMap.get(city); //  get city 
 }
 
 test("should return a temperature report for the user's cities", () => {

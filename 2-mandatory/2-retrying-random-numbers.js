@@ -9,8 +9,18 @@ function generateRandomNumber() {
     return Math.round(Math.random() * 100);
 }
 
-function getRandomNumberGreaterThan50() {
+function getRandomNumberGreaterThan50(n) {
     // TODO - implement using a do-while loop
+    
+   
+    //return (genNum < 50 ?  genNum + " " +"less than 50" : genNum); 
+
+    do {
+    
+      n = generateRandomNumber();
+      
+    } while ( n < 50 );
+   console.log (n);
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
